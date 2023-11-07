@@ -1,6 +1,6 @@
 ﻿program zad6;
 const n=5;
-var arr:array[1..n] of integer;
+var A:array[1..n] of integer;
 i:integer;
 k:boolean;
 begin
@@ -8,12 +8,12 @@ begin
   for i:= 1 to n do
   begin
     write('arr[i]: ');
-    readln(arr[i]);
+    readln(A[i]);
   end;
   k := True;
   for i:= 2 to n do
   begin
-    if arr[i] < arr[i-1] then
+    if A[i] < A[i-1] then
     begin
       k := False;
       break;
